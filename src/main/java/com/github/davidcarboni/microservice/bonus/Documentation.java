@@ -16,9 +16,12 @@ import java.io.IOException;
  * This class calls that functionality and exposes it on '/documentation'.
  */
 @Api
-public class Documentation extends DefaultApiDocumentation {
+public class Documentation {
+
+    DefaultApiDocumentation documentation = new DefaultApiDocumentation();
+
     @GET
     public Router selfDocumentation(HttpServletRequest req, HttpServletResponse res) throws IOException {
-        return super.get(req, res);
+        return documentation.get(req, res);
     }
 }

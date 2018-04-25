@@ -16,9 +16,12 @@ import java.io.IOException;
  * This class calls that functionality and exposes it on '/documentation'.
  */
 @Api
-public class RestolinoConfiguration extends DefaultRestolinoConfiguration {
+public class RestolinoConfiguration {
+
+    DefaultRestolinoConfiguration restolinoConfiguration = new DefaultRestolinoConfiguration();
+
     @GET
     public Configuration restolinoConfiguration(HttpServletRequest req, HttpServletResponse res) throws IOException {
-        return super.get(req, res);
+        return restolinoConfiguration.get(req, res);
     }
 }

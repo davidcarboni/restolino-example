@@ -15,17 +15,12 @@ import java.io.IOException;
  * This class calls that functionality and exposes it on '/index', redirecting you to '/index.html'.
  */
 @Api
-public class Redirect extends DefaultIndexRedirect {
+public class Redirect {
 
-    /**
-     * Set up the redirect path in the default constructor.
-     */
-    public Redirect() {
-        super("/index.html");
-    }
+    DefaultIndexRedirect redirect = new DefaultIndexRedirect("/index.html");
 
     @GET
     public Object selfDocumentation(HttpServletRequest req, HttpServletResponse res) throws IOException {
-        return super.get(req, res);
+        return redirect.get(req, res);
     }
 }

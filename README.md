@@ -21,7 +21,7 @@ Restolino provides default handlers to meet some basic needs and helpful use cas
  * **DefaultApiDocumentation**: This uses the information gathered by the `ApiHandler` class to produce Json that documents the configured routes, methods and inbound/outbound message types. It's relatively basic, but provides a useful view. This gets configured on the `/` route.
  * **DefaultServerError**: A default handler for exceptions thrown by routes.
  * **DefaultNotFound**: A default handler for requests that aren't mapped.
- * **DefaultIndexRedirect**: A handler you can configure to redirect requests to `/`, e.g. to an `index.html`.
+ * **DefaultIndexRedirect**: A handler you can configure to redirect `/` requests to e.g. a static `index.html`.
  * **DefaultRestolinoConfiguration**: As an alternative to `DefaultApiDocumentation`, you can expose the resolved configuration values on `/`.
 
 ## Start with why
@@ -35,4 +35,4 @@ If you don't understantd why developers are leaving Java and the JVM in droves f
 
 Software that's not clear to understand, quick to change and ultimately straightforward to rewrite or retire is legacy.
 
-*If you want to actually build things, pick technology that's smart enough to stay out of your way.*
+*If you want to actually build things, then pick technology that's smart enough to stay out of your way.*

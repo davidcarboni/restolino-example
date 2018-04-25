@@ -5,8 +5,32 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.davidcarboni</groupId>
-    <artifactId>microservice-example</artifactId>
+    <artifactId>restolino-example</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>Restolino Example</name>
+    <description>
+        A Restolino project demonstrating how to use the six features of the Restolino framework.
+    </description>
+    <url>https://github.com/davidcarboni/restolino</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Carboni</name>
+        <url>https://github.com/carboni/</url>
+    </organization>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <dependencies>
 
@@ -14,6 +38,13 @@
             <groupId>com.github.davidcarboni</groupId>
             <artifactId>restolino</artifactId>
             <version>0.1.15-SNAPSHOT</version>
+        </dependency>
+
+        <!-- Logging implementation -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.25</version>
         </dependency>
 
     </dependencies>

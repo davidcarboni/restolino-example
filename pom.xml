@@ -37,7 +37,7 @@
         <dependency>
             <groupId>com.github.davidcarboni</groupId>
             <artifactId>restolino</artifactId>
-            <version>0.1.15-SNAPSHOT</version>
+            <version>0.1.16</version>
         </dependency>
 
         <!-- Logging implementation -->

@@ -15,6 +15,15 @@ Restolino is *"brutally opinionated"* about your design.
   * **Filter**: this gives you (intentionally) limited ability to see requests before they are handled. It allows you to decide whether or not to continue handling the request (e.g. it could be used for [jwt](jwt.io) handling).
   * **Startup**: allows you to do one-time initialisation before your service starts accepting http requests.
 
+## Default features
+
+Restolino provides default handlers to meet some basic needs. With the exception of self-documentation and redirect (where there are examples in the `bonus` package) there aren't examples for these. It's worth mentioning them here as they'll be configured for you if you don't provide your own implementations. 
+ * **DefaultApiDocumentation**: This uses the information gathered by the `ApiHandler` class to produce Json that documents the configured routes, methods and inbound/outbound message types. It's relatively basic, but provides a useful view. This gets configured on the `/` route.
+ * **DefaultServerError**: A default handler for exceptions thrown by routes.
+ * **DefaultNotFound**: A default handler for requests that aren't mapped.
+ * **DefaultIndexRedirect**: A handler you can configure to redirect requests to `/`, e.g. to an `index.html`.
+ * **DefaultRestolinoConfiguration**: As an alternative to `DefaultApiDocumentation`, you can expose the resolved configuration values on `/`.
+
 ## Start with why
 Restolino has a crystal-clear design philosopy: **simplicity and speed**. Simplicity means *"have the courage and discipline to do less"*. Speed means *"your success is limited by the length of your longest feedback loop"*. Simplicity breeds speed and speed needs simplicity.
 

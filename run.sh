@@ -1,0 +1,1 @@
+mvn clean package && java -Drestolino.files=src/main/web -Drestolino.classes=target/classes -Drestolino.packageprefix=com.github.davidcarboni.microservice -cp "target/dependency/*" com.github.davidcarboni.restolino.Main

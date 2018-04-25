@@ -17,7 +17,7 @@ Restolino is *"brutally opinionated"* about your design.
 
 ## Default features
 
-Restolino provides default handlers to meet some basic needs. With the exception of self-documentation and redirect (where there are examples in the `bonus` package) there aren't examples for these. It's worth mentioning them here as they'll be configured for you if you don't provide your own implementations. 
+Restolino provides default handlers to meet some basic needs and helpful use cases. With the exception of self-documentation, restolino configuration and redirect (where there are examples in the `bonus` package) there aren't examples for these. It's worth mentioning them here as they'll be configured for you if you don't provide your own implementations. 
  * **DefaultApiDocumentation**: This uses the information gathered by the `ApiHandler` class to produce Json that documents the configured routes, methods and inbound/outbound message types. It's relatively basic, but provides a useful view. This gets configured on the `/` route.
  * **DefaultServerError**: A default handler for exceptions thrown by routes.
  * **DefaultNotFound**: A default handler for requests that aren't mapped.
